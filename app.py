@@ -21,6 +21,7 @@ app = Flask(__name__)
 @app.route('/predict', methods=['POST', 'GET'])
 def predict():
     ## Get the data
+    print(request)
     data=request.args['text']
     print(data)
     ## Predict
